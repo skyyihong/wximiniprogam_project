@@ -3,5 +3,6 @@
   "projectname": "wximiniprogam_project",
   "setting": {
     "compileHotReLoad": true
-  }
+  },
+  "libVersion": "2.19.6"
 }

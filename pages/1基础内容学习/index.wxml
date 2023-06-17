@@ -1,0 +1,27 @@
+<!--pages/1.基础内容学习/index.wxml-->
+<!--  -->
+
+<view>
+  <view>view相当于div，text相当于span</view>
+  <view>block相当于template</view>
+  <view>wx:for的使用：</view>
+  <view wx:for="{{movies}}" wx:key="index"> {{item}} {{index}}</view>
+  <view></view>
+  <view>使用block</view>
+  <block wx:for="{{movies}}" wx:key="index">
+    <view> {{item}} {{index}}</view>
+  </block>
+
+  <view>-----</view>
+  <view>
+    count: {{count}}
+  </view>
+  <button bindtap="addClick">counter+</button>
+  <button bindtap="minuteClick">counter-</button>
+
+
+  <block wx:for="{{count}}" wx:key="index">
+    <view>电影：{{item}}</view>
+  </block>
+
+</view>
