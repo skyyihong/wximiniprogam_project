@@ -1,0 +1,11 @@
+<!--pages/4for_command/index.wxml-->
+
+
+
+<view>
+  <view>wx:for{{xxx}}中可以是对象，数组，可以数字(表示循环多少次)，字符串</view>
+  <view>wx:for-item="i" wx:for-index="idx" 是修改item和index关键字的方法</view>
+  <view>wx:key="*this" 是遍历出来每个item本身，如果是{id:1,name:"hongyan"} 用wx:key="id"即可，不用wx:key="{{item.id}}"</view>
+
+  <view wx:for="{{5}}" wx:for-item="i" wx:for-index="idx" wx:key="*this">item:{{i}} index:{{idx}}</view>
+</view>

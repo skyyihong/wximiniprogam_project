@@ -1,0 +1,24 @@
+<!--pages/6learn_event/index.wxml-->
+<text>pages/6learn_event/index.wxml</text>
+
+<view>
+  <!-- father标签不是son标签的父标签，所以son的事件冒泡不会传给father -->
+  <view bindtap="tapOuter">father</view>
+
+  <!-- bigson是son的父标签，所以son的事件冒泡可以传给bigson -->
+  <view bindtap="bigson">bigson
+
+    <view bindtap="tapInner">son</view>
+
+  </view>
+  <view>--------target和currenttarget------------</view>
+  <view>事件里面的target属性是指手指触发到的元素，currenttarget是指那个元素触发的bindTap事件</view>
+  <view>----------冒泡和委托----------</view>
+  <view>bind:xx 为事件冒泡 catach:xx 为事件冒泡终止</view>
+  <view>capture-bind:xx 为事件委托 capture-catach:xx 为事件委托终止</view>
+  <view>---------mark属性使用-----------</view>
+  <!-- 可以获取对应的属性的对象 -->
+  <button mark:age="{{18}}" mark:name="hongyan" bindtap="tapMark">clickmarkview</button>
+
+
+</view>

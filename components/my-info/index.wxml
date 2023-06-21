@@ -1,0 +1,3 @@
+<!--components/my-info/index.wxml-->
+<view>组件需要在page.json或全局的app.json进行注册才能使用</view>
+<view>我是组件</view>

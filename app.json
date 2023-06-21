@@ -1,8 +1,13 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/2App和Page_内置组件/index",
     "pages/1基础内容学习/index",
-    "pages/index/index"
-
+    "pages/3regist_page/index",
+    "pages/4for_command/index",
+    "pages/5wxs_demo/index",
+    "pages/6learn_event/index",
+    "pages/7learn_components/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -27,5 +32,8 @@
     ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "my-info": "/components/my-info/index"
+  }
 }

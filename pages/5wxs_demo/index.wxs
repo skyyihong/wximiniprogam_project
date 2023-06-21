@@ -1,0 +1,7 @@
+function formatTime(timeStamp) {
+  return "<" + timeStamp + ">"
+}
+
+module.exports = {
+  formatTime: formatTime
+}

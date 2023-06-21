@@ -1,0 +1,36 @@
+<!--pages/3regist_page/index.wxml-->
+
+
+<view>
+  <!-- <text>pages/3regist_page/index.wxml</text> -->
+  <text> nickName:{{userInfo.nickName}}</text>
+  <!-- modes属性是image最重要的属性，图片默认文320*240px，通过 widthFix可以使图片保留320px，高度根据原图片比例适配-->
+  <image src="{{userInfo.avatarUrl}}" class="avatar" mode="widthFix" />
+  <button type=" primary" size="mini" bindtap="getUserInfo">获取用户ID和头像信息</button>
+
+  <view>--------srcollview 上下滚动----------</view>
+  <!-- scroll-view要有滚动条，需求固定宽度或高度，并且子元素超出 scroll-view 的宽高-->
+  <scroll-view scroll-y>
+    <view class="son">111111111</view>
+    <view class="son">111111111</view>
+    <view class="son">111111111</view>
+    <view class="son">111111111</view>
+    <view class="son">111111111</view>
+    <view class="son">111111111</view>
+    <view class="son">111111111</view>
+  </scroll-view>
+  <view>--------srcollview 左右滚动----------</view>
+  <scroll-view scroll-x id="second" enable-flex>
+    <view class="son">111111111</view>
+    <view class="son">111111111</view>
+    <view class="son">111111111</view>
+    <view class="son">111111111</view>
+    <view class="son">111111111</view>
+    <view class="son">111111111</view>
+    <view class="son">111111111</view>
+  </scroll-view>
+
+  <view>--------rpx说明----------</view>
+  <view>在iphone6的视口宽度为375px在2倍图下，2rpx=1px，即1rpx等于物理1px </view>
+  <view>------------------</view>
+</view>

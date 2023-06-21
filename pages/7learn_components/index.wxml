@@ -1,0 +1,10 @@
+<!--pages/7learn_components/index.wxml-->
+<text>pages/7learn_components/index.wxml</text>
+<my-info></my-info>
+<view>--------组件样式的影响问题------</view>
+<view>1.组件内只使用class，不能使用其他来做样式选择器</view>
+<view>2.使用组件的页面，可以使用class、id、标签做为样式选择器，其中标签选择器会影响组件的样色</view>
+<view>3.正常页面和组件之间的样式是隔离的。同时，可以在组件的js网页添加options属性，</view>
+<view>4.options的styleIsolation的属性：shared可以使组件与页面共享样色;apply-shared可以使页面样式影响组件,但不会影响使用组件的页面</view>
+<text decode> &nbsp;</text>
+<view>--------组件传值------</view>

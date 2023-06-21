@@ -1,0 +1,29 @@
+/* pages/3regist_page/index.wxss */
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+scroll-view {
+  background-color: pink;
+  width: 100%;
+  height: 200rpx;
+}
+.son {
+  background-color: blue;
+  width: 400rpx;
+  height: 400rpx;
+}
+.son:nth-child(2n) {
+  background-color: purple;
+}
+
+#second {
+  display: flex;
+  background-color: red;
+  flex-wrap: nowrap;
+}
+#second .son {
+  flex-shrink: 0;
+}

@@ -1,0 +1,22 @@
+<!--pages/5wxs_demo/index.wxml-->
+
+<!-- 从其他模块引入的方式： -->
+<wxs module="time" src='./index.wxs'></wxs>
+
+<wxs module="currentTime">
+  function myTime(timeStamp) {
+    return "<<" + timeStamp + ">>"
+  }
+
+  module.exports = {
+    myTime: myTime
+  }
+
+
+</wxs>
+
+
+<text>pages/5wxs_demo/index.wxml</text>
+<view>模块引入：mytime:{{time.formatTime(myTime)}} </view>
+<view>同文件引入：mytime:{{currentTime.myTime(myTime)}} </view>
+<view> --------------------------------</view>
