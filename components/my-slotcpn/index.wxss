@@ -1,0 +1,9 @@
+/* components/my-slotcpn/index.wxss */
+
+.defaultslot .defaultcontent {
+  display: none;
+}
+
+.default_outer:empty + .defaultcontent {
+  display: block;
+}

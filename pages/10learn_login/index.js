@@ -1,26 +1,45 @@
-// pages/7learn_components/index.js
+// pages/10learn_login/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    info: {
-      name: "hongyan",
-      age: 18
-    }
+    code: '',
+    nickname: ""
   },
-  mydefinedTap(event) {
-    console.log(event.detail);
+  getNickname() {
+    wx.getUserProfile({
+      desc: 'desc',
+      success(res) {
+        console.log(res);
+      }
+    })
   },
-  getmyref() {
-    const cpnFoo = this.selectComponent(".mytoref")
-    cpnFoo.toreffoo()
+
+  getCode() {
+
+    wx.login({
+      success: (res) => {
+        console.log(res.code)
+        this.setData({
+          code: res.code
+        })
+      },
+    })
+
+
+  },
+  backNaviator() {
+    wx.navigateBack({
+      delta: 1
+    })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    if (options) console.log(options);
 
   },
 
@@ -48,7 +67,11 @@ Page({
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload() {
+  onUnload(event) {
+    const pages = getCurrentPages()
+    pages[pages.length - 2].setData({
+      myname: "hello world"
+    })
 
   },
 

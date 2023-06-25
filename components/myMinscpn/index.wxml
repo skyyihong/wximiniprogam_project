@@ -1,0 +1,4 @@
+<!--components/myMinscpn/index.wxml-->
+<view>我是用behavior的组件</view>
+<view>testData:{{testData}}</view>
+<button bindtap="addCount" size="mini" type="primary">测试+1</button>

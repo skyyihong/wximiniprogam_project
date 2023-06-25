@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-toref": "/components/my-toRef/index",
+    "mycpnslot": "/components/my-slotcpn/index",
+    "myminscpn": "/components/myMinscpn/index"
+
+  }
 }

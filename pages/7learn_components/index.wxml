@@ -1,6 +1,9 @@
 <!--pages/7learn_components/index.wxml-->
 <text>pages/7learn_components/index.wxml</text>
 <my-info></my-info>
+
+
+<view>以上为自定义组件的事例</view>
 <view>--------组件样式的影响问题------</view>
 <view>1.组件内只使用class，不能使用其他来做样式选择器</view>
 <view>2.使用组件的页面，可以使用class、id、标签做为样式选择器，其中标签选择器会影响组件的样色</view>
@@ -8,3 +11,42 @@
 <view>4.options的styleIsolation的属性：shared可以使组件与页面共享样色;apply-shared可以使页面样式影响组件,但不会影响使用组件的页面</view>
 <text decode> &nbsp;</text>
 <view>--------组件传值------</view>
+<my-info info="{{info}}" sonclass="fathertosonclass" bind:mydefinedTap="mydefinedTap"></my-info>
+<text decode>
+  1.propertys属性
+  2.exetraclasses属性
+  3.triggerevent
+  4.bind:自定义=”自定义事件“
+
+</text>
+<view>--------this.selectCompents(xxx) 获取组件----</view>
+
+<my-toref class="mytoref"></my-toref>
+<button type="warn" bindtap="getmyref">获取my-toref组件方法并执行</button>
+
+<view>-----------------组件slot--------------</view>
+<text decode>
+  1.小程序不支持默认值,可以用伪元素+兄弟选择器来代替实现 (细节查看mycpnslot组件的源码)
+  2.具名插槽需要在组件js里增加options进行申明
+</text>
+<mycpnslot>
+  <view>我是匿名插槽</view>
+  <view slot="left">我是left具名插槽</view>
+  <view slot="center"> 我是center具名插槽</view>
+  <view slot="right"> 我是right具名插槽</view>
+  <!-- <view slot="default"> 我是default具名插槽</view> -->
+
+</mycpnslot>
+<view>-----------------------------------</view>
+<view>--------behavior(混入)---------------</view>
+<myminscpn></myminscpn>
+
+
+
+<view>--------组件生命周期lifetime pagelifetime-----</view>
+<view>
+  1.created 一般用于获取网络数据 attached 一般获取组件元素，detached 一般为销毁/注销数据
+  2.lifetimes是存放created attached detached对象的
+</view>
+
+<view>--------observe(watch)-----</view>

@@ -1,0 +1,15 @@
+<!--components/my-slotcpn/index.wxml-->
+<view>
+  <slot></slot>
+
+  <slot name="left"> </slot>
+  <slot name="center"> </slot>
+  <slot name="right"> </slot>
+
+  <view class="defaultslot">
+    <view class="default_outer">
+      <slot name="default"></slot>
+    </view>
+    <view class="defaultcontent">默认插槽内容 </view>
+  </view>
+</view>

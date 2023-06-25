@@ -1,0 +1,32 @@
+<!--pages/8learn_components_api/index.wxml-->
+<view>-----用函数 类 promise封装 wx.request------</view>
+<view>查看是utils/request</view>
+<button type="primary" size="mini" bindtap="funRequest">request自定义函数</button>
+<button type="primary" size="mini" bindtap="classRequest">request自定义类</button>
+
+<text decode>&nbsp;</text>
+<view>-----toast modal loding action等的弹窗------</view>
+
+<button type="default" size="mini" bindtap="tapToast">toast</button>
+<button type="warn" size="mini" bindtap="tapModal">modal</button>
+<button type="default" size="mini" bindtap="tapLoading">loading</button>
+<button type="warn" size="mini" bindtap="tapAction">action</button>
+
+<text decode>&nbsp;</text>
+<view>---------------小程序分享-------------</view>
+<button open-type="share" type="primary">分享小程序</button>
+
+<view></view>
+<text decode>&nbsp;</text>
+<view>-----wx.getSystemInfo------</view>
+<button type="primary" bindtap="getSystemInfo">获取硬件设备信息</button>
+<view></view>
+<text decode>&nbsp;</text>
+<view>-----wx.getLocation------</view>
+<button type="primary" bindtap="getLocation">获取用户位置信息</button>
+<view></view>
+<text decode>&nbsp;</text>
+<view>----------wx.locationStorage-------------</view>
+<view>本地存储操作有可以同步和异步方法，可根据需要来使用</view>
+<button type="primary" bindtap="setStorage">设置Storage</button>
+<button type="primary" bindtap="getStorage">获取Storage</button>

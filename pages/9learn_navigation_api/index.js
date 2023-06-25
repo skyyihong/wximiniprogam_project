@@ -1,26 +1,30 @@
-// pages/7learn_components/index.js
+// pages/9learn_navigation_api/index.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    info: {
-      name: "hongyan",
-      age: 18
-    }
+    myname: "hongyan"
   },
-  mydefinedTap(event) {
-    console.log(event.detail);
+  navigateTo() {
+    wx.navigateTo({
+      url: "/pages/10learn_login/index?name=hongyan&ag=18",
+      events: {
+        detailToPage: function (data) {
+          console.log("detailToPage:", data);
+        }
+      }
+    })
   },
-  getmyref() {
-    const cpnFoo = this.selectComponent(".mytoref")
-    cpnFoo.toreffoo()
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+
+    if (options && options == {}) console.log(options)
 
   },
 
@@ -69,7 +73,5 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage() {
 
-  }
 })

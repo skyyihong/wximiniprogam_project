@@ -26,6 +26,18 @@ Page({
       {
         context: "组件学习",
         path: '/pages/7learn_components/index'
+      },
+      {
+        context: "API学习",
+        path: '/pages/8learn_components_api/index?name=hongyan&age=18'
+      },
+      {
+        context: "页面跳转API",
+        path: '/pages/9learn_navigation_api/index'
+      },
+      {
+        context: "微信登录login",
+        path: '/pages/10learn_login/index'
       }
     ]
   },

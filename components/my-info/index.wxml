@@ -1,3 +1,7 @@
 <!--components/my-info/index.wxml-->
 <view>组件需要在page.json或全局的app.json进行注册才能使用</view>
 <view>我是组件</view>
+<view>name:{{info.name}}</view>
+<view>age:{{info.age}}</view>
+<view class='sonclass'>页面传给组件的颜色</view>
+<button bindtap="tapToPage" type="primary">mydefinedTap</button>

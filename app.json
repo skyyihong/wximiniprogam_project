@@ -7,8 +7,16 @@
     "pages/4for_command/index",
     "pages/5wxs_demo/index",
     "pages/6learn_event/index",
-    "pages/7learn_components/index"
+    "pages/7learn_components/index",
+    "pages/8learn_components_api/index",
+    "pages/9learn_navigation_api/index",
+    "pages/10learn_login/index"
   ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#eee",
@@ -36,4 +44,5 @@
   "usingComponents": {
     "my-info": "/components/my-info/index"
   }
+
 }

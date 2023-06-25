@@ -1,0 +1,9 @@
+<!--pages/10learn_login/index.wxml-->
+<text>pages/10learn_login/index.wxml</text>
+<view>code:{{code}}</view>
+<view>nickname:{{nickname}}</view>
+
+<view>--------------返回页面------------</view>
+<button type="primary" bindtap="backNaviator">返回页面</button>
+<button type="primary" bindtap="getCode">获取code</button>
+<button type="primary" bindtap="getNickname">获取nickname和logo</button>

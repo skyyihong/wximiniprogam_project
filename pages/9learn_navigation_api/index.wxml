@@ -1,0 +1,15 @@
+<!--pages/9learn_navigation_api/index.wxml-->
+<text>pages/9learn_navigation_api/index.wxml</text>
+
+<view>------路由跳转wx.navigate-------</view>
+<button type="primary" bindtap="navigateTo">wx.navigateTo</button>
+传值name:{{myname}}
+<view>------跳转页面传值-------</view>
+<view>1.按导航栏的返回按钮或使用api wx.navigateBack()都可以触发返回</view>
+<view>2.getCurrentPages()可以拿到当前所有页面的对象实例,可以对页面实例的data或函数直接操作</view>
+<view>3.返回会触发unload生命周期，可以统一在这里进行传值处理</view>
+<view>4.在2.7.3后wx.navigateTo 有一个event参数可以传自定义函数，使用geteventchannel 获取</view>
+
+
+
+<view>------navigate组件-------</view>
