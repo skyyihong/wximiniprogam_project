@@ -34,6 +34,10 @@ Page({
     wx.navigateBack({
       delta: 1
     })
+    const eventChannel = this.getOpenerEventChannel()
+    eventChannel.emit("pageToDetial", {
+      data: "详情页的数据"
+    })
   },
   /**
    * 生命周期函数--监听页面加载

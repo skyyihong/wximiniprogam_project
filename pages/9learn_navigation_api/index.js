@@ -6,17 +6,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-    myname: "hongyan"
+    myname: "hongyan",
+    data: ""
   },
   navigateTo() {
     wx.navigateTo({
       url: "/pages/10learn_login/index?name=hongyan&ag=18",
       events: {
-        detailToPage: function (data) {
-          console.log("detailToPage:", data);
+        pageToDetial: (data) => {
+          console.log("pageToDetial", data);
+          this.setData({
+            data
+          })
         }
       }
     })
+
   },
 
   /**
@@ -53,6 +58,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
+    console.log("9page_unonload");
 
   },
 
