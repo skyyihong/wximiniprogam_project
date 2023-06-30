@@ -38,6 +38,10 @@ Page({
       {
         context: "微信登录login",
         path: '/pages/10learn_login/index'
+      },
+      {
+        context: "第三方组件vant使用",
+        path: '/pages/11learn_vant_component/index'
       }
     ]
   },

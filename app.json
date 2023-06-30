@@ -10,7 +10,8 @@
     "pages/7learn_components/index",
     "pages/8learn_components_api/index",
     "pages/9learn_navigation_api/index",
-    "pages/10learn_login/index"
+    "pages/10learn_login/index",
+    "pages/11learn_vant_component/index"
   ],
   "permission": {
     "scope.userLocation": {

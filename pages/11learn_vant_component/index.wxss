@@ -1,0 +1,14 @@
+/* pages/11learn_vant_component/index.wxss */
+
+.vantab {
+  width: 100%;
+  height: 500rpx;
+}
+.van-tabs__wrap {
+  display: flex;
+  justify-content: center;
+}
+.van-tabs__scroll {
+  /* border: 1px solid red; */
+  width: 200rpx !important;
+}

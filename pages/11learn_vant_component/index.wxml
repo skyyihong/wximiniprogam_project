@@ -1,0 +1,17 @@
+<!--pages/11learn_vant_component/index.wxml-->
+<view>1.npm install @vant/weapp -S</view>
+<view>2.选择工具->构建npm</view>
+<view>3.调样式可以找到对应的类，如果组件有--xxxx的变量名，可以直接修改变量的值</view>
+
+
+
+<van-button type="info">信息按钮</van-button>
+<van-button type="warning">警告按钮</van-button>
+<van-button type="danger">危险按钮</van-button>
+
+<view>
+  <van-tabs active="{{ active }}" swipeable="{{true}}" animated="{{true}}" line-width="0px">
+    <van-tab class='vantab' title="播放">内容 1</van-tab>
+    <van-tab class='vantab' title="歌词">内容 2</van-tab>
+  </van-tabs>
+</view>
