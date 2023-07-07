@@ -1,0 +1,4 @@
+<!--pages/12learn_hy_event_store/index.wxml-->
+<view>跳转到新页面并将数据传递过去</view>
+<view>使用eventStore.setState、eventStore.onState eventStore.offState来监听数据</view>
+<button bindtap="clickMe">点我</button>

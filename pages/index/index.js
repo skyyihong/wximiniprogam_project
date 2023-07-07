@@ -42,6 +42,10 @@ Page({
       {
         context: "第三方组件vant使用",
         path: '/pages/11learn_vant_component/index'
+      },
+      {
+        context: "第三方库hy-event-store使用",
+        path: '/pages/12learn_hy_event_store/index'
       }
     ]
   },

@@ -1,7 +1,11 @@
 <!--pages/11learn_vant_component/index.wxml-->
 <view>1.npm install @vant/weapp -S</view>
 <view>2.选择工具->构建npm</view>
-<view>3.调样式可以找到对应的类，如果组件有--xxxx的变量名，可以直接修改变量的值</view>
+<view>3.在页面或全局app里引入组件</view>
+<view>4.调样式可以找到对应的类，如果组件有--xxxx的变量名，可以直接修改变量的值</view>
+html {
+--button-normal-font-size:14px;
+}
 
 
 

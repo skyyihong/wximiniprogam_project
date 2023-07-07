@@ -1,22 +1,26 @@
-// pages/11learn_vant_component/index.js
-
-
+// pages/12learn_hy_event_store/index.js
+import eventStore from "../../store/index"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    active: 0
-  },
 
+  },
+  clickMe() {
+    wx.navigateTo({
+      url: '/pages/detail/index',
+      success(res) {
+        eventStore.setState("name", "hongyan")
+      }
+    })
+    console.log(1111);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
-  },
-  onUnload() {
 
   },
 

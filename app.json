@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/detail/index",
     "pages/2App和Page_内置组件/index",
     "pages/1基础内容学习/index",
     "pages/3regist_page/index",
@@ -11,7 +12,8 @@
     "pages/8learn_components_api/index",
     "pages/9learn_navigation_api/index",
     "pages/10learn_login/index",
-    "pages/11learn_vant_component/index"
+    "pages/11learn_vant_component/index",
+    "pages/12learn_hy_event_store/index"
   ],
   "permission": {
     "scope.userLocation": {

@@ -1,0 +1,2 @@
+<!--pages/detail/index.wxml-->
+<view>接受来自于hy-event-store页面的name数据:{{name}}</view>

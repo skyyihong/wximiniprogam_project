@@ -1,23 +1,29 @@
-// pages/11learn_vant_component/index.js
-
-
+// pages/detail/index.js
+import eventStore from "../../store/index"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    active: 0
+    name: "hello world"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  changeName(val) {
+    setTimeout(() => {
+      this.setData({
+        name: val
+      })
+    }, 1000)
+  },
   onLoad(options) {
-
+    eventStore.onState("name", this.changeName)
   },
   onUnload() {
-
+    eventStore.offState("name", this.changeName)
   },
 
   /**
